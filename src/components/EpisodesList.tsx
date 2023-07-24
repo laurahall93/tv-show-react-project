@@ -1,3 +1,5 @@
+import episodes from "../episodes.json";
+
 interface IEpisode {
   id: number;
   url: string;
@@ -18,6 +20,28 @@ interface IEpisode {
   _links: { self: { href: string } };
 }
 
-const EpisodesList = (episodes: IEpisode[]): JSX.Element => {
-  return <p> Episode lists</p>;
+export const EpisodesList = (prop: IEpisode[]): JSX.Element => {
+  return (
+    <div>
+      {prop.map((episode, id) => (
+        <section key={id}>
+          <p>id:{episode.id}</p>
+          <a href={episode.url}> Episode link </a>
+          <p>Name:{episode.name}</p>
+          <p>Season:{episode.season}</p>
+          <p>Number:{episode.number}</p>
+          <p>Type:{episode.type}</p>
+          <p>Airdate:{episode.airdate}</p>
+          <p>Airtime:{episode.airtime}</p>
+          <p>Airstamp:{episode.airstamp}</p>
+          <p>Average rating:{episode.rating.average}</p>
+          <p>Runtime{episode.runtime}</p>
+          <img src={episode.image.medium} alt="" />
+          <img src={episode.image.original} alt="" />
+          <p>{episode.summary}</p>
+          <a href={episode._links.self.href}>Link to episode API</a>
+        </section>
+      ))}
+    </div>
+  );
 };

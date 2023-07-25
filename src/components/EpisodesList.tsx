@@ -1,5 +1,3 @@
-import episodes from "../episodes.json";
-
 export interface Image {
   medium: string;
   original: string;

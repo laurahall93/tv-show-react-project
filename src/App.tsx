@@ -1,7 +1,5 @@
 import episodes from "./episodes.json";
 import { EpisodesList } from "./components/EpisodesList";
-import { Image } from "./components/EpisodesList";
-import { IEpisode } from "./components/EpisodesList";
 
 console.log(`Imported ${episodes.length} episode(s)`);
 console.log(`First episode's name is ${episodes[0].name}`);

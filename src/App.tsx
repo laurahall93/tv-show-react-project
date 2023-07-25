@@ -8,22 +8,22 @@ console.log(`First episode's name is ${episodes[0].name}`);
 
 function App(): JSX.Element {
   const listEpisode = episodes.map((episode, id) => (
-    <div key = {id}>
-      <EpisodesList 
-      id = {episode.id}
-      url ={episode.url}
-      name={episode.name}
-      season = {episode.season}
-      number = {episode.number}
-      type = {episode.type}
-      airdate= {episode.airdate}
-      airtime = {episode.airtime}
-      airstamp = {episode.airstamp}
-      rating = {episode.rating}
-      runtime = {episode.runtime}
-      image={episode.image}
-      summary= {episode.summary}
-      _links={episode._links}
+    <div key={id}>
+      <EpisodesList
+        id={episode.id}
+        url={episode.url}
+        name={episode.name}
+        season={episode.season}
+        number={episode.number}
+        type={episode.type}
+        airdate={episode.airdate}
+        airtime={episode.airtime}
+        airstamp={episode.airstamp}
+        rating={episode.rating}
+        runtime={episode.runtime}
+        image={episode.image}
+        summary={episode.summary}
+        _links={episode._links}
       />
     </div>
   ));

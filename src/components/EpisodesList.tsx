@@ -41,7 +41,7 @@ export const EpisodesList = (episode: IEpisode): JSX.Element => {
         <p>Average rating:{episode.rating.average}</p>
         <p>Runtime{episode.runtime}</p>
         <img src={episode.image.medium} alt="" />
-        <br/>
+        <br />
         <img src={episode.image.original} alt="" />
         <p>{episode.summary}</p>
         <a href={episode._links.self.href}>Link to episode API</a>

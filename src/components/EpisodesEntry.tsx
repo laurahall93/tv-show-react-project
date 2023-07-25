@@ -23,7 +23,7 @@ export interface IEpisode {
   _links: { self: { href: string } };
 }
 
-export const EpisodesList = (episode: IEpisode): JSX.Element => {
+export const EpisodesEntry = (episode: IEpisode): JSX.Element => {
   return (
     <div>
       <section>

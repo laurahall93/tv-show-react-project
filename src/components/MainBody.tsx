@@ -6,17 +6,12 @@ export function MainBody(): JSX.Element {
     <div key={id}>
       <EpisodesEntry
         id={episode.id}
-        url={episode.url}
         name={episode.name}
         season={episode.season}
         number={episode.number}
-        type={episode.type}
-        airdate={episode.airdate}
-        airtime={episode.airtime}
-        airstamp={episode.airstamp}
         rating={episode.rating}
-        runtime={episode.runtime}
         image={episode.image}
+        url={episode.url}
         summary={episode.summary}
         _links={episode._links}
       />

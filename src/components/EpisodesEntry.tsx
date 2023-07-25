@@ -4,7 +4,7 @@ export interface Image {
 }
 
 export interface IEpisode {
-  id: number;
+  id?: number;
   url?: string;
   name: string;
   season: number;

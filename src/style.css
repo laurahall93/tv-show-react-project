@@ -1,0 +1,35 @@
+body {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.episode-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  width: min-content;
+}
+.episode-entry {
+  background-color: whitesmoke;
+  border: none;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.summary,
+a {
+  padding: 20px;
+  color: gray;
+}
+
+img {
+  margin-top: 30px;
+  max-width: 85%;
+  height: auto;
+}
+
+.episode-title {
+  border: 1px solid black;
+  border-radius: 5px;
+}

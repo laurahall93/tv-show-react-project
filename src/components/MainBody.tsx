@@ -15,5 +15,5 @@ export function MainBody(): JSX.Element {
     </div>
   ));
 
-  return <div>{listEpisode}</div>;
+  return <div className="episode-container">{listEpisode}</div>;
 }

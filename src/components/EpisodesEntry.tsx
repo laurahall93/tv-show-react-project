@@ -27,14 +27,16 @@ export interface IEpisode {
 
 export const EpisodesEntry = (episode: IEpisode): JSX.Element => {
   return (
-    <div>
+    <div className="episode-entry">
       <section>
-        <p>{episode.name}</p>
-        <p>{episodeCode(episode.season, episode.number)}</p>
+        <div className="episode-title">
+          <p>{episode.name}</p>
+          <p>{episodeCode(episode.season, episode.number)}</p>
+        </div>
         <img src={episode.image.medium} alt="" />
         <br />
         <a href={episode.url}>Link to the episode</a>
-        <p>{episode.summary}</p>
+        <p className="summary">{episode.summary}</p>
       </section>
     </div>
   );

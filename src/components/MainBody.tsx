@@ -15,5 +15,10 @@ export function MainBody(): JSX.Element {
     </div>
   ));
 
-  return <div className="episode-container">{listEpisode}</div>;
+  return (
+    <>
+      <input type = "text" placeholder="search tv show"/>
+      <div className="episode-container">{listEpisode}</div>
+    </>
+  );
 }

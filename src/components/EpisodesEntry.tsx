@@ -1,10 +1,12 @@
+import episodeCode from "../utils/episodeCode";
+
 export interface Image {
   medium: string;
   original: string;
 }
 
 export interface IEpisode {
-  id: number;
+  id?: number;
   url?: string;
   name: string;
   season: number;
@@ -28,8 +30,7 @@ export const EpisodesEntry = (episode: IEpisode): JSX.Element => {
     <div>
       <section>
         <p>{episode.name}</p>
-        <p>Season:{episode.season}</p>
-        <p>Episode:{episode.number}</p>
+        <p>{episodeCode(episode.season, episode.number)}</p>
         <img src={episode.image.medium} alt="" />
         <br />
         <a href={episode.url}>Link to the episode</a>

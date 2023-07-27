@@ -33,3 +33,12 @@ img {
   border: 1px solid black;
   border-radius: 5px;
 }
+
+input {
+  width: 200px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-right: 90%;
+}

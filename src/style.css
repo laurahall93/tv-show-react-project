@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center center;
+  margin-right: 95px;
+  margin-left: 95px;
+  margin-top: 40px;
+}
+
+.episode-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 40px;
+}
+
+.episode-entry {
+  height: 100%;
+  background-color: whitesmoke;
+  border: none;
+  font-size: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+  color: gray;
+}
+
+a {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.summary,
+a {
+  padding: 20px;
+  color: gray;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+img {
+  display: block;
+  margin-top: 30px;
+  width: 90%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.episode-title {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 5px;
+  color: black;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-right: 90%;
+}
+
+@media (max-width: 700px) {
+  .episode-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
